@@ -22,6 +22,7 @@ var keyCode = event.which ? event.which : event.keyCode;
 	if(caracteres.test(touche) >= 0) {
 		champ.value += touche;
 		console.log("touche");
+		champ.value -= touche;
 	}
 	return false;
 }
